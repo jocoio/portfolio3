@@ -1,0 +1,793 @@
+{
+  "results": [
+    {
+      "name": "Scout",
+      "id": "scout",
+      "info":
+        "In January 2016 I joined Northeastern’s on campus, student run design studio, Scout. From there, it’s been a wild ride of hard work, late nights, and lifelong friends. I’ve been lucky enough to wear several different hats while on Scout, and the following is a collection of some of my favorite work.",
+      "category": [
+        "Design",
+        "UI",
+        "Wireframing",
+        "UX",
+        "Filmmaking",
+        "Animation",
+        "Development"
+      ],
+      "date": "January 2016 - Present",
+      "link": "http://northeastern.edu/scout",
+      "feature1": {
+        "url": "design/scout/sclogo.gif",
+        "x": [4, 4, 0, 0],
+        "y": [6, 6, 0, 0],
+        "z": [0, 2, 0, 0],
+        "width": [3, 2, 0, 0],
+        "height": [5, 3, 0, 0]
+      },
+      "feature2": {
+        "url": "design/scout/labsMenu.png",
+        "x": [5, 5, 6, 0],
+        "y": [0, 0, 0, 0],
+        "z": [1, 0, 0, 0],
+        "width": [6, 7, 6, 12],
+        "height": [8, 7, 8, 10]
+      },
+      "feature3": {
+        "url": "design/scout/meeting.png",
+        "x": [8, 5, 0, 0],
+        "y": [3, 8, 9, 0],
+        "z": [2, 0, 0, 0],
+        "width": [4, 7, 7, 0],
+        "height": [4, 3, 4, 0]
+      },
+      "rowContent": [
+        [
+          [
+            "Photo", 
+            "design/scout/end.gif", 
+            [10, 10, 1, 0]
+          ]
+        ],
+        [
+          
+          [
+            "TitleAndText",
+            "Design",
+            "I spent my first semester on the studio team, as part of an internal project to redo Scout's brand and website. It was my first time doing web design, but I was lucky enough to be surrounded by a supporting and helpful team.",
+            [3, 1, 0],
+            false
+          ],
+          [
+            "Photo",
+            "design/scout/mockup.png",
+            [6, 9, 2, 0]
+          ],
+          [
+            "Photo",
+            "design/scout/iteration.png", 
+            [4, 3, 2, 5],
+            true
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "dev/unsize/maca.png", 
+            [4, 2, 6, 6],
+            true
+          ],
+          [
+            "Photo",
+            "dev/unsize/marketing.png", 
+            [5, 10, 1, 0]
+          ], 
+          [
+            "TitleAndText",
+            "unsize.",
+            "My other semester on the studio team was on a team working with unsize, a fashion startup trying to revolutionize online shopping. For this project we created a chrome extension, marketing site, illustrations, updated branding, and photo/video assets. It was so humbling to work with such a disgustingly talented team, and might be my favortie semester as a part of Scout.",
+            [4, 2, 0],
+            false
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Animation",
+            "For the Fall 2016 semester I joined Scout's marketing team, creating animation content on a weekly basis. This included event promotion, and working to establish a cohesive video/visual identity for Scout.",
+            [2, 1, 0],
+            false
+          ],
+          [
+            "Photo", 
+            "design/scout/sclogo.gif", 
+            [4, 11, 2, 0]
+          ],
+          [
+            "Photo", 
+            "design/scout/meet.gif", 
+            [4, 4, 7, 1],
+            true
+          ],
+          [
+            "Photo", 
+            "design/scout/recruit.gif", 
+            [4, 4, 1, 6],
+            true
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Video",
+            "While on the marketing team, I also made video content, including event recaps and client spotlights, which showcased the variety of work being done by the various studio teams.",
+            [4, 4, 0],
+            true
+          ]
+        ],
+        [
+          [
+            "Video",
+            "//www.youtube.com/embed/videoseries?list=PLNzX5UGbEkhxlCKvSpJKCqNd6iBR0Jm16",
+            [10, 1, 0]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Hello LA",
+      "id": "hellola",
+      "info":
+        "In February 2016 I attended my first hackathon, Hack@Brown. Working with LA locals, we created a curated guide to Los Angeles, and won best user experience out of ~100 teams.",
+      "category": ["Design", "UX ", "Brand Identity"],
+      "date": "February 2016",
+      "link": "http://hellofromla.com/",
+      "label": "Hello LA",
+      "url": "design/helloLA/map.png",
+      "x": [4, 4, 6, 1],
+      "y": [0, 0, 0, 8],
+      "z": [0, 0, 0, 0],
+      "width": [2, 2, 6, 10],
+      "height": [10, 10, 4, 3],
+      "rowContent": [
+        [
+          [
+            "Photo", 
+            "design/helloLA/map.png", 
+            [10, 10, 1, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Brainstorming",
+            "The idea behind Hello LA was a local's guide to Los Angeles, as Ashley and Rishab were both LA natives. They were looking for designers and we were looking for developers, and Evan was looking for a group! Once we settled on an idea, we quickly got to work brainstorming the branding, categories, and rough layout of the website.",
+            [3, 1, 0],
+            false
+          ],
+          [
+            "Photo",
+            "design/helloLA/team1.jpg",
+            [6, 7, 2, 0]
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/helloLA/icons.png", 
+            [7, 2, 1, 0]
+          ], 
+          [
+            "TitleAndText",
+            "Icons",
+            "One of my responsibilities was creating the corresponding icons for each category of locations on the website. We wanted the icons to be inviting, simple, and usable on a wide range of sizes.",
+            [2, 2, 0],
+            false
+          ]
+        ],
+        [
+          [
+            "Photo", 
+            "design/helloLA/maps.png", 
+            [10, 10, 1, 0]
+          ],
+          [
+            "TitleAndText",
+            "Map",
+            "My labor of love for this project was the vector outline of Los Angeles on the background of the home page. From 1am to 3am, I traced every line on a Google map screenshot of downtown LA using Adobe Illustrator. It was a tedious process, but I knew that it would be a great backdrop for the landing page. And it helped solidify the brand identity of our project.",
+            [4, 4, 1],
+            true
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/helloLA/ui.png",
+            [6, 7, 1, 0]
+          ],
+          [
+            "TitleAndText",
+            "UI",
+            "My other contribution to this project was the user interface. Once we planned out the initial structure of the site, I wanted the homepage to showcase the variety and fast paced energy of Los Angeles. From there I developed the idea of the rotating background color, and the changing call to action. The wheel of choices can be controlled by the arrow keys, but it also moves on its own. I think this personal touch drew people in, and made the interface very user-friendly.",
+            [3, 2, 0],
+            false
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "A match made in providence",
+            "This was my first hackathon, and I couldn't have asked for a better one. Hello LA won best user experience, and we got to present our product during the closing ceremony. It was an eye-opening experience, getting to see how a product comes together from start to finish. I feel unbelievably lucky we found such amazing and accommodating developers, who took every wild idea Vanessa and I had, and ran with it with enthusiasm. It gave me a new found appreciation for every team member and their job, and I can't wait for my next opportunity to work in a team like that again.",
+            [6, 3, 0],
+            true
+          ],
+          [
+            "Photo", 
+            "design/helloLA/team2.jpg", 
+            [8, 10, 2, 1]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Portfolio 3.0",
+      "id": "portfolio",
+      "info":
+        "After learning about web frameworks at my first co-op, I wanted to rebuild my site from the ground up. I built my first portfolio last summer, with no prior web dev experience. It was functional, but definitely time for an upgrade.",
+      "category": ["Design", "Development", "UI", "UX"],
+      "date": "Summer 2017",
+      "label": "Portfolio",
+      "link": null,
+      "url": "dev/portfolio/joco.png",
+      "x": [4, 4, 6, 1],
+      "y": [0, 0, 0, 8],
+      "z": [0, 0, 0, 0],
+      "width": [8, 8, 6, 10],
+      "height": [3, 3, 4, 3],
+      "rowContent": [
+        [
+          [
+            "Photo",
+            "dev/portfolio/joco.png",
+            [10, 10, 1, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Design",
+            "I started the design process by determining the site layout and the rough navigation of the site. From there I jumped into my sketchbook, brainstorming the look and feel of the new site on paper.",
+            [3, 1, 0]
+          ],
+          [
+            "Photo",
+            "dev/portfolio/sketch.jpg",
+            [6, 7, 2, 0]
+          ]
+        ],
+        [
+          [
+            "Text",
+            "From there, I jumped into Sketch, and created low and high fidelity mockups. With 13 screens and 3 screen sizes to design for about 30 different hi-fi screen mockups were created in total.",
+            [3, 1, 0]
+          ],
+          [
+            "Photo",
+            "dev/portfolio/home.png",
+            [6, 7, 2, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "React",
+            "I chose React because I needed modularity, and React's components was the perfect solution. I got to work with React earlier in the year while on co-op, so luckily I was familiar with the primary concepts. It has its own share of challenges, but having object oriented principles I was fimiliar with made the transition much more manageable.",
+            [6, 3, 0],
+            true
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "dev/portfolio/grid.png",
+            [6, 7, 1, 0]
+          ],
+          [
+            "TitleAndText",
+            "Grid",
+            "My grid is a beefed-up version of React-Flexbox-Grid, with added support for y position, z position, and height. Essentially when creating a column or row component, the height, width, etc. props passed correspond to class names (ex. col-x-sm-6), that are applied to the component. This was a pain to customize, but it allowed me to actualize my more ambitious designs.",
+            [3, 2, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "PhotoContainer",
+            "One of the primary components I created for this project is the ‘PhotoContainer' component. Essentially, it's a photo frame for images that have different dimensions at different screen sizes. It takes in a JSON object through its props, representing layout information: x, y, z, width, and height for each of the 4 screen sizes. It can also be passed a link, making it a clickable link. I eventually adapted it and created a ‘TextContainer’ for text boxes (including this one).",
+            [6, 3, 0],
+            true
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Scout Site",
+      "id": "scoutsite",
+      "info":
+        "During spring of 2016 I joined Scout studio as a designer, and worked on a team tasked with redesigning and creating Scout's website. We started with a brand dive, assessing the current state of Scout and its collateral, and from there moved onto sketching, wireframing, high fidelity mockups, and eventually coding.",
+      "category": ["Design", "UX", "Wireframing", "UI"],
+      "date": "Spring 2016",
+      "label": "Scout Site",
+      "link": "http://northeastern.edu/scout",
+      "url": "design/scout/labs.png",
+      "x": [7, 7, 6, 1],
+      "y": [0, 0, 5, 12],
+      "z": [0, 0, 0, 0],
+      "width": [2, 2, 6, 10],
+      "height": [10, 10, 4, 3],
+      "rowContent": [
+        [
+          [
+            "Photo", 
+            "design/scout/labs.png", 
+            [10, 10, 1, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Sketches",
+            "Once we mapped out the skeleton of the site, we divided up the pages between each team member, and created rough paper sketches of what we envisioned those pages would look like. It was useful to be able to start away from the computer, and quantify our ideas without any technological constraints.",
+            [3, 1, 0],
+            false
+          ],
+          [
+            "Photo",
+            "design/scout/board.jpg",
+            [6, 7, 2, 0]
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/scout/wireframe.png", 
+            [6, 6, 1, 0]
+          ], 
+          [
+            "TitleAndText",
+            "Wireframes",
+            "After finalizing our sketches, we moved onto the computer and translated our drawings to wireframes using sketch. It was collectively our first times using sketch, so there was definitely a learning curve. However when paired with Invision, it became a powerful tool to convey what we wanted the user experience to be.",
+            [3, 2, 0],
+            false
+          ]
+        ],
+        [
+          [
+            "Photo", 
+            "design/scout/mockup.png", 
+            [5, 8, 1, 0]
+          ],
+          [
+            "Photo", 
+            "design/scout/mockup2.png", 
+            [5, 8, 1, 0]
+          ],
+          [
+            "TitleAndText",
+            "Hi-fi Mockups",
+            "The next step in our process was creating high fidelity mockups of our wireframes. This step really quantified our designs, and took them from more abstract ideas to actual products. This was also an important step, as we got feedback from the developers on what was possible or within their scope. These constraints helped us create designs that were realistic and could be translated to code.",
+            [4, 4, 1],
+            true
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Iteration",
+            "We worked on an agile system, with weekly check-ins and critique. It was really helpful to get together and see everyone's progress, as everyone was working on different pages and we wanted to ensure a cohesive style while also providing our personal touches.",
+            [2, 1, 0],
+            false
+          ],
+          [
+            "Photo",
+            "design/scout/iteration.png",
+            [7, 6, 2, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Where the magic happens",
+            "Once the designs were completed, we handed them of to the amazing developers who turned our designs into an actual product, which is an unbelievable gratifying experience. I always leave projects like this with a newfound respect for every aspect of this process, and how hard work and teamwork can create powerful results.",
+            [6, 3, 0],
+            true
+          ],
+          [
+            "Photo", 
+            "design/scout/team.jpg", 
+            [8, 10, 2, 1]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "unsize.",
+      "id": "unsize",
+      "info":
+        "This past fall semester I was lucky enough to be on a team working with unsize, a new startup trying to revolutionize the online shopping experience. We worked with them to create an updated band identity, a chrome extension, a marketing site, and much more.",
+      "category": ["Design", "Development", "Photo", "Video", "UI", "UX"],
+      "date": "Fall 2017",
+      "label": "unsize",
+      "link": "http://unsize.me",
+      "url": "dev/unsize/maca.png",
+      "x": [4, 4, 6, 1],
+      "y": [8, 8, 10, 16],
+      "z": [0, 0, 0, 0],
+      "width": [8, 8, 6, 10],
+      "height": [3, 3, 4, 3],
+      "rowContent": [
+        [
+          [
+            "Photo",
+            "dev/unsize/maca.png",
+            [10, 10, 1, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Marketing site",
+            "One of my primary responsibilities for this project was the marketing site. I designed and developed the site from the ground up using sketch and react. I really enjoyed getting to play both roles and using an agile system we were able to quickly role out each iteration.",
+            [3, 1, 0]
+          ],
+          [
+            "Photo",
+            "dev/unsize/marketing.png",
+            [6, 11, 2, 0]
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "dev/unsize/marketing2.png",
+            [6, 11, 1, 0]
+          ],
+          [
+            "TitleAndText",
+            "User research",
+            "After a bit of user research, we realized that of current designs didn’t actually explain how unsize’s service worked. This drove a lot of the copy and layout changes going into the final version in an effort to make a clear, concise, but still colorful marketing site.",
+            [3, 2, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Photo",
+            "While creating collateral for unsize we took a series of photos, and I explored how the existing brand could interact with photography. Below are a few of the iterations I went through.",
+            [4, 4, 0],
+            true
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "dev/unsize/josh4.jpg",
+            [3, 3, 1, 0]
+          ],
+          [
+            "Photo",
+            "dev/unsize/josh2.jpg",
+            [6, 11, 2, 0]
+          ],
+          [
+            "Photo",
+            "dev/unsize/josh1.jpg",
+            [3, 3, 1, 4],
+            true
+          ],
+          [
+            "Photo",
+            "dev/unsize/josh3.jpg",
+            [3, 3, 1, 8],
+            true
+          ]
+        ],
+        [
+          [
+            "Video",
+            "https://giphy.com/gifs/xT1R9yrDcsDL5t65DW/html5",
+            [6, 1, 0]
+          ],
+          [
+            "TitleAndText",
+            "Video",
+            "One of my smaller tasks was a series of short video clips showing how to use Tailor, unsize’s smart measuring device. The small animations on top are part of unsize’s brand, added by the talented Gabi Hominoff.",
+            [3, 2, 0]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "This Girl Codes",
+      "id": "thisgirlcodes",
+      "info":
+        "This Girl Codes is my social campaign from graphic design 2. This semester long project involved choosing a cause and developing a campaign around it. Being a combined CS & Design major, this issue felt appropriate to tackle.",
+      "category": ["Design", "Typography", "Branding"],
+      "date": "Spring 2017",
+      "label": "This Girl Codes.",
+      "link": null,
+      "url": "design/thisGirlCodes/collage6.png",
+      "x": [4, 4, 6, 1],
+      "y": [4, 4, 5, 12],
+      "z": [0, 0, 0, 0],
+      "width": [8, 8, 6, 10],
+      "height": [3, 3, 4, 3],
+      "rowContent": [
+        [
+          [
+            "Photo",
+            "design/thisGirlCodes/collage6.png",
+            [10, 10, 1, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Typography",
+            "The primary typography for this campaign is Futura Extra Bold Condensed Oblique. I chose this typeface for its fresh, fast, and in-motion feel. The goal of the typeface was to feel gender neutral, but also be a style that girls could connect to, almost like the typographic version of a strong female role model. Univers is the Robin of this dynamic duo, providing support for the bold, Batman-esque Futura.",
+            [3, 1, 0],
+            false
+          ],
+          [
+            "Photo",
+            "design/thisGirlCodes/type.png",
+            [6, 7, 2, 0]
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/thisGirlCodes/color.png",
+            [6, 10, 1, 0]
+          ],
+          [
+            "TitleAndText",
+            "Color",
+            "The primary colors of the campaign come from the iconic Rosie the Riveter poster. The colors are purposefully gender neutral, to avoid following any alienating gender norms. Each color has equal weight in the palette, and is used equally throughout the campaign. The colors are relatively simple and primary, geared towards an overall younger audience.",
+            [3, 2, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Logo",
+            "The logo for this campaign went through a couple iterations. Once I had my primary typeface locked down, I focused on finding the correct font that would work on multiple sizes and applications. After landing on Futura Extra Bold Condensed Oblique, I spent some type working the kerning to give it more of a unique identity.",
+            [4, 4, 0],
+            true
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/thisGirlCodes/logo.png",
+            [10, 6, 1, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Photography",
+            "The images chosen for this campaign are of real girls & young women working and collaborating. The source for the majority of photos was the Major League Hacking (MLH) organization, which sponsors and helps facilitate hackathons across the country. By highlighting real girls & women in action, other girls & young women will hopefully be able to relate more to the content, creating a stronger connection to the imagery and the campaign as a whole.",
+            [3, 1, 0]
+          ],
+          [
+            "Photo",
+            "design/thisGirlCodes/girl5.jpg",
+            [6, 7, 2, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Duotone",
+            "To make the images more cohesive and unique to this campaign, a duotone overlay was added to them. The colors used for the duotones come from the primary color palette, seen below. The bright pop of color was used to catch the eye, create consistency, and provide a fresh coat of paint, so to speak.",
+            [3, 1, 0]
+          ],
+          [
+            "Photo",
+            "design/thisGirlCodes/collages.png",
+            [6, 7, 2, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Posters",
+            "The posters for this campaign can be divided into two categories: the knows no gender posters, and the one-offs. The knows no gender posters are meant to be seen consecutively and build on each other using the same format. The words preceding the statement are centered around process and experiences of computer science, and the statement is meant to show that everyone, regardless of gender should feel welcome to share in these experiences.",
+            [6, 3, 0],
+            true
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/thisGirlCodes/knows2.png",
+            [10, 9, 1, 0]
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/thisGirlCodes/knows3.png",
+            [5, 5, 1, 0]
+          ],
+          [
+            "Photo",
+            "design/thisGirlCodes/knows1.png",
+            [5, 5, 1, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "One-offs",
+            "The one-off posters in this campaign are the weird cousin of the knows no gender posters. These posters use rhyming, plays on common sayings in the industry, and direct statements to create memorable connections for the primary audience. They take a unique angle and while they accomplish the same goal as the other style, they do so in a way that is more personal and individual.",
+            [6, 3, 0],
+            true
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/thisGirlCodes/oneOff1.png",
+            [10, 11, 1, 0]
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/thisGirlCodes/oneOff3.png",
+            [5, 5, 1, 0]
+          ],
+          [
+            "Photo",
+            "design/thisGirlCodes/oneOff4.png",
+            [5, 5, 1, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Environment",
+            "Since the primary audience of this campaign is girls & young women, this campaign can make the biggest impact in middle and high schools. To challenge the rigid ecosystem of these schools, the campaign includes a series of accessories and wearables, allowing girls & young women to identify with the movement and challenge their environment every day.",
+            [3, 1, 0]
+          ],
+          [
+            "Photo",
+            "design/thisGirlCodes/Sticker.png",
+            [8, 6, 1, 6],
+            true
+          ],
+          [
+            "Photo",
+            "design/thisGirlCodes/Tote.png",
+            [6, 13, 2, 0]
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/thisGirlCodes/tshirt.png",
+            [7, 10, 1, 0]
+          ],
+          [
+            "Photo",
+            "design/thisGirlCodes/pin.jpg",
+            [4, 6, 7, 1],
+            true
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Social",
+            "Once the girls & young women are interested in the movement, they can find a community on the This Girl Codes Instagram page. This page features student spotlights highlighting female CS students, quotes from inspirational female icons, and a variety of one-offs from the campaign. This community is meant to foster a sense of belonging beyond the classroom, and create visibility online.",
+            [4, 1, 0]
+          ],
+          [
+            "Photo",
+            "design/thisGirlCodes/insta.png",
+            [5, 15, 2, 0]
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "MyHousing",
+      "id": "myhousing",
+      "info":
+        "In spring 2016 I took the class design: process, context, and systems. This introductory course explored the core ideas of design thinking and user-focused design. For our final project we were tasked with finding a frustrating user experience we've encountered while at NU, and try to design a smarter solution to it.",
+      "category": ["Design", "UX", "Design Thinking"],
+      "date": "Spring 2016",
+      "label": "MyHousing",
+      "link": null,
+      "url": "design/myHousing/housing.png",
+      "x": [10, 10, 6, 1],
+      "y": [0, 0, 10, 16],
+      "z": [0, 0, 0, 0],
+      "width": [2, 2, 6, 10],
+      "height": [10, 10, 4, 3],
+      "rowContent": [
+        [
+          [
+            "Photo",
+            "design/myHousing/housing.png",
+            [10, 10, 1, 0]
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Brainstorming",
+            "To start the process, we brainstormed some problems that we had encountered during our time at Northeastern. This ranged from school resource sites like myNeu to more abstract concepts like how students chose to spend their money around campus. We settled on the process of selecting housing for the fall, as all 3 of us have had a frustrating experience trying to navigate through the confusing process.",
+            [6, 3, 0],
+            true
+          ]
+        ],
+        [
+          [
+            "TitleAndText",
+            "Research",
+            "Once we decided on our topic for the project, we dived into research, interviewing students about their experience with housing. This was done by sending out a google form to students of Northeastern's Facebook group. With the collected data we analyzed pain points, common issues that students had while using the current housing application. We then made each of these issues a user story, to flesh out and give character to the problems, in order to better understand how to empathize and solve the issue.",
+            [3, 1, 0],
+            false
+          ],
+          [
+            "Photo",
+            "design/myHousing/user3.png",
+            [6, 7, 2, 0]
+          ]
+        ],
+        [
+          [
+            "Photo", 
+            "design/myHousing/sketch.png", 
+            [5, 6, 1, 0]
+          ],
+          [
+            "Photo", 
+            "design/myHousing/low.png", 
+            [5, 6, 1, 0]
+          ],
+          [
+            "TitleAndText",
+            "Sketching and Wireframming",
+            "After finalizing our sketches, we moved onto the computer and translated our drawings to wireframes using sketch. It was collectively our first times using sketch, so there was definitely a learning curve. However when paired with Invision, it became a powerful tool to convey what we wanted the user experience to be.",
+            [6, 3, 1],
+            true
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/myHousing/high.png",
+            [6, 7, 1, 0]
+          ],
+          [
+            "TitleAndText",
+            "High Fidelity",
+            "The final step of the project was adding onboarding screens for finding roommates, and converting our wireframes into high fidelity mockups with the use of sketch and invision. In the end we were happy with the result, and thought it was a great way to see a project from start to finish, guided by a user-focused design process. In the future we hope to bring this app to life, ideally with the help of Northeastern's assistance.",
+            [3, 2, 0],
+            false
+          ]
+        ],
+        [
+          [
+            "Photo",
+            "design/myHousing/home.png",
+            [10, 13, 1, 0]
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+/* 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'sans-serif';
+}
+
+html {
+  overflow: hidden;
+  overflow-y: scroll;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #303030;
+} */
+
+/*
+* {
+  transition: all, 150ms;
+}
+*/
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  margin: 0px;
+  color: #303030;
+} */
+/*
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  color: #303030;
+  margin: 0px;
+}
+
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: underline;
+  color: #303030;
+}
+
+.row {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
+}
+
+.actionButton {
+  font-size: 14px;
+  font-kerning: 50px;
+  text-decoration: none;
+  color: #303030;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: #303030;
+  padding: 7px 30px;
+  transition: all, 150ms;
+}
+.actionButton:hover {
+  background-color: #23966c;
+  border-color: #23966c;
+  color: #ffffff;
+}
+
+.container {
+  margin: 0;
+  width: 100vw;
+}
+
+.footer {
+  height: 75px;
+}
+
+/* lg */
+/*
+@media only screen and (min-width: 1200px) {
+  .row {
+    max-width: 960px;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 54px;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+/* md */
+/*
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .row {
+    max-width: 768px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+/* sm */
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .row {
+    max-width: 930px;
+    height: 80vh;
+  }
+
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+} */
+
+/* sm */
+/*
+@media only screen and (max-width: 768px) {
+  .row {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .actionButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/*Flexbox adjustments */
+/*
+.col {
+  padding: 0px !important;
+} */
