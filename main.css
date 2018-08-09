@@ -1,3 +1,21 @@
+@keyframes fadein {
+  from {
+    top: 30px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSlow{
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
 .red {
   color: #F67258;
 }
@@ -26,8 +44,26 @@ h3 {
   text-transform: uppercase;
 }
 
+.nav-container{
+  z-index: 10;
+}
+
+.nav {
+  background-color: #ffffff;
+  opacity: .95
+}
+
 .nav-link {
   font-weight: 300;
+  padding: 15px 0;
+}
+
+.landing {
+  animation: fadein .6s;
+}
+
+.teaser {
+  animation: fadeInSlow 2s;
 }
 
 
@@ -51,9 +87,8 @@ h3 {
     letter-spacing: 2px;
   }
 
-
   .landing {
-    padding: 120px 0;
+    margin-top: 200px;
   }
 }
 
@@ -78,7 +113,7 @@ h3 {
   }
 
   .landing {
-    padding: 100px 0;
+    margin-top: 150px;
   }
 }
 
@@ -103,7 +138,7 @@ h3 {
   }
 
   .landing {
-    padding: 80px 0;
+    margin-top: 125px;
   }
 }
 
