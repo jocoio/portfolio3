@@ -1,3 +1,5 @@
+/* Keyframes for landing animation */
+
 @keyframes fadein {
   from {
     top: 30px;
@@ -9,18 +11,34 @@
   }
 }
 
-@keyframes fadeInSlow{
-  0% { opacity:0; }
-  66% { opacity:0; }
-  100% { opacity:1; }
-}
+/* Brand colors */
 
+:root {
+  --red: #F67258; 
+  --blue: #4370B1;
+  --green: #3EAE42;
+}
 
 .red {
   color: #F67258;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+#redCode {
+  background-color: var(--red); 
+}
+
+#blueCode {
+  background-color: var(--blue); 
+}
+
+#greenCode {
+  background-color: var(--green); 
+}
+
+
+/* Edits on built-in elements */
+
+h1, h2, h3, h4, h5, h6, p, a, li {
   font-family: 'Source Sans Pro', sans-serif;
   color: #303030;
 }
@@ -44,9 +62,31 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
+  letter-spacing: .5px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  font-weight: 300;
+  text-decoration: none;
+}
+
 .nav-container{
   z-index: 10;
 }
+
+
+/* Custom elements */
 
 .nav {
   background-color: #ffffff;
@@ -59,15 +99,52 @@ h3 {
 }
 
 .landing {
-  animation: fadein .6s;
+  animation: fadein 1s;
+  padding-bottom: 100px;
 }
 
-.teaser {
-  animation: fadeInSlow 2s;
+.spacer {
+  padding: 50px 0;
+}
+
+.experienceh4 {
+  margin-bottom: 0px;
+  /* This keeps the textbox to the min width, because it's used to figure out the underline length */
+  width: min-content; 
+  /* Keeps everything on one line, otherwise and more will split bc of above min-content */
+  white-space: nowrap;
+}
+
+.job {
+  padding-bottom: 5px;
+}
+
+.at {
+  font-weight: 300;
+}
+
+/* Starting states */
+
+.underline {
+  height: 7px;
+  width: 0;
+}
+
+#skills {
+  opacity: 0;
+}
+
+.careerCover {
+  height: 33%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  transform-origin: right center inherit;
 }
 
 
 /* Extra large devices (large desktops, 1200px and up) */
+
 @media (min-width: 1200px) {
   h1 {
     font-size: 90px;
@@ -87,12 +164,20 @@ h3 {
     letter-spacing: 2px;
   }
 
+  li {
+    margin: 6px 0;
+    font-size: 16px;
+    letter-spacing: .5px;
+  }
+
   .landing {
     margin-top: 200px;
   }
 }
 
+
 /* Large devices (desktops, 992px and up) */
+
 @media (min-width: 768px) and (max-width: 1199px) {
   h1 {
     font-size: 72px;
@@ -112,12 +197,24 @@ h3 {
     letter-spacing: 2px;
   }
 
+  h4 {
+    font-size: 20px;
+  }
+
+  li {
+    margin: 6px 0;
+    font-size: 16px;
+    letter-spacing: .5px;
+  }
+
   .landing {
     margin-top: 150px;
   }
 }
 
+
 /* Small devices (landscape phones, 576px and up) */
+
 @media (max-width: 767px) {
   h1 {
     font-size: 56px;
@@ -135,6 +232,17 @@ h3 {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 1.5px;
+    padding-bottom: 15px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  li {
+    margin: 5px 0;
+    font-size: 16px;
+    letter-spacing: .4px;
   }
 
   .landing {
