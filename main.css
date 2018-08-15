@@ -17,10 +17,22 @@
   --red: #F67258; 
   --blue: #4370B1;
   --green: #3EAE42;
+  --yellow: #FDCE50;
 }
 
 .red {
-  color: #F67258;
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.blue {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.green {
+  color: var(--green);
+  border-color: var(--green);
 }
 
 #redCode {
@@ -49,6 +61,10 @@ a:hover {
   transition: all 100ms;
 }
 
+::selection {
+  background: var(--yellow) /* WebKit/Blink Browsers */
+}
+
 h1 {
   font-weight: 700;
 }
@@ -60,9 +76,16 @@ h2 {
 h3 {
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 30px;
+
 }
 
 h4 {
+  font-weight: 700;
+}
+
+/* TODO: change this to H2, move everything down */
+h5 {
   font-weight: 700;
 }
 
@@ -85,6 +108,16 @@ li {
   z-index: 10;
 }
 
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 
 /* Custom elements */
 
@@ -98,6 +131,7 @@ li {
   padding: 15px 0;
 }
 
+/* TODO: animate with scrollmagic instead */
 .landing {
   animation: fadein 1s;
   padding-bottom: 100px;
@@ -123,6 +157,67 @@ li {
   font-weight: 300;
 }
 
+.feature {
+  background: linear-gradient(#419BF9, var(--blue));
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  height: 350px;
+  margin-top: 30px;
+}
+
+#tgc-image {
+  background: url("./images/thisgirlcodes/thisgirlcodes.png") no-repeat center center;
+  background-size: cover;
+}
+
+#tgc-logo {
+  max-width: 100px;
+  display: block;
+  margin: auto;
+}
+
+#scout-logo {
+  max-width: 150px;
+  display: block;
+  margin: auto;
+}
+
+.feature-title {
+  margin: 20px 0 0 0;
+}
+
+.project-category {
+  border: 1px solid;
+  border-radius: 5px;
+  width: min-content;
+  white-space: nowrap;
+  padding: 4px 8px;
+  font-size: 14px;
+  display: inline-block;
+  letter-spacing: 0.2px;
+  margin-right: 6px;
+}
+
+.project-tags {
+  margin-bottom: 32px;
+}
+
+.project-description {
+  margin-bottom: 8px;
+}
+
+.other-spacer {
+  margin: 0 0 0 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 100%
+}
+
+#other-title {
+  padding-left: 15px;
+  white-space: nowrap;
+}
+
 /* Starting states */
 
 .underline {
@@ -141,7 +236,6 @@ li {
   position: absolute;
   transform-origin: right center inherit;
 }
-
 
 /* Extra large devices (large desktops, 1200px and up) */
 
@@ -164,6 +258,10 @@ li {
     letter-spacing: 2px;
   }
 
+  h5 {
+    font-size: 40px;
+  }
+
   li {
     margin: 6px 0;
     font-size: 16px;
@@ -172,6 +270,11 @@ li {
 
   .landing {
     margin-top: 200px;
+  }
+
+  .other-spacer {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }
 
@@ -201,6 +304,10 @@ li {
     font-size: 20px;
   }
 
+  h5 {
+    font-size: 32px;
+  }
+
   li {
     margin: 6px 0;
     font-size: 16px;
@@ -209,6 +316,11 @@ li {
 
   .landing {
     margin-top: 150px;
+  }
+
+  .other-spacer {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }
 
@@ -224,7 +336,7 @@ li {
 
   h2 {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 30px;
     letter-spacing: .45px;
   }
 
@@ -232,11 +344,14 @@ li {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 1.5px;
-    padding-bottom: 15px;
   }
 
   h4 {
     font-size: 18px;
+  }
+
+  h5 {
+    font-size: 24px;
   }
 
   li {
@@ -247,6 +362,10 @@ li {
 
   .landing {
     margin-top: 100px;
+  }
+
+  .feature-title {
+    padding-bottom: 5px;
   }
 }
 

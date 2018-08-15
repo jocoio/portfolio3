@@ -4,15 +4,28 @@ $(function () {
   // Init ScrollMagic Controller
   var scrollMagicController = new ScrollMagic.Controller();
 
+  var mobileController = new ScrollMagic.Controller();
+
+  skills(scrollMagicController);
+  experience(scrollMagicController);
+  recentWork(scrollMagicController)
+  otherWork(mobileController);
+
+
+  if ($(window).width() <= 768) {
+    mobileController.enabled(false);
+  }
+});
+
+// Handles skills animation
+function skills(scrollMagicController) {
+
+  var skillsTl = new TimelineMax();
+
+  // Sets width of lines to width of category name
   var redWidth = $("#redCode").prev().width();
   var blueWidth = $("#blueCode").prev().width();
   var greenWidth = $("#greenCode").prev().width();
-
-  var skillsTl = new TimelineMax();
-  var experienceTl = new TimelineMax();
-  var colorChangeTl = new TimelineMax();
-
-
 
   // Skills timeline
   skillsTl
@@ -27,7 +40,14 @@ $(function () {
     offset: -125, // start scene -125px above trigger
   })
     .setTween(skillsTl)
-    .addTo(scrollMagicController);
+    .addTo(scrollMagicController)
+    // .addIndicators();
+}
+
+// Handles experience animation
+function experience(scrollMagicController) {
+  var experienceTl = new TimelineMax();
+  var colorChangeTl = new TimelineMax();
 
   // Color change on scout name timeline
   colorChangeTl
@@ -44,7 +64,7 @@ $(function () {
     .to("#clarks", 0.25, { color: "#F67258" }, .8) // Red sweep
     .to("#jhandy", 0.25, { color: "#4370B1" }, .9) // Blue sweep
     .to("#scout", 0.25, { color: "#3EAE42" }, 1) // Green sweep
-    .add(colorChangeTl, 2)
+    .add(colorChangeTl, 1.5)
 
   // Experience scene
   var experienceScene = new ScrollMagic.Scene({
@@ -52,15 +72,61 @@ $(function () {
     offset: -75
   })
     .on('leave', function (event) {
-      experienceTl.time(1);
+      experienceTl.time(1); // Jumps back in time to right before the color change
     })
     .on('enter', function (event) {
-      experienceTl.time(0);
+      experienceTl.time(0); // Resets the animation to the top
     })
     .setTween(experienceTl)
-    .addTo(scrollMagicController);
+    .addTo(scrollMagicController)
+    // .addIndicators();
+}
 
-  // Add debug indicators fixed on right side
-  // skillsScene.addIndicators();
-  // experienceScene.addIndicators();
-});
+// Handles recent work animation
+function recentWork(scrollMagicController) {
+
+  var tgcTl = new TimelineMax();
+  var scoutTl = new TimelineMax();
+
+  // TGC timeline
+  tgcTl
+    .fromTo("#tgc-cover", .25, { top: 40, opacity: 0 }, { top: 0, opacity: 1 }, 0)  // Fade cover in
+    .fromTo("#tgc-logo", .25, { y: 150, opacity: 0 }, { y: 125, opacity: 1 }, .3) // Fade logo in
+    ;
+
+  // TGC scene
+  var tgcScene = new ScrollMagic.Scene({
+    triggerElement: "#tgc-section",
+    offset: 0, // start scene 0 above trigger
+  })
+    .setTween(tgcTl)
+    .addTo(scrollMagicController)
+    // .addIndicators();
+
+
+  // Scout timeline
+  scoutTl
+    .fromTo("#scout-cover", .25, { top: 40, opacity: 0 }, { top: 0, opacity: 1 }, 0) // Fade cover in
+    .fromTo("#scout-logo", .25, { y: 170, opacity: 0 }, { y: 145, opacity: 1 }, .3) // Fade logo in
+    ;
+
+  // Scout scene
+  var scoutScene = new ScrollMagic.Scene({
+    triggerElement: "#scout-section",
+    offset: 0, // start scene 0 above trigger
+  })
+    .setTween(scoutTl)
+    .addTo(scrollMagicController)
+    // .addIndicators();
+}
+
+// Handles other work animation
+function otherWork(mobileController) {
+
+  var scene = new ScrollMagic.Scene({ triggerElement: "#ok" })
+    .setPin("#other-title", { spacerClass: "other-spacer" })
+    .addTo(mobileController)
+    // .addIndicators();
+}
+
+

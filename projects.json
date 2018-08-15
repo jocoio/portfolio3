@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "title": "Scout Site",
+      "description": "A brand refresh and site redesign for Northeastern’s student-led design studio.",
+      "tags": [["Prototyping", "Wireframming"],[], []],
+      "link": "https://web.northeastern.edu/scout/"
+    },
+    {
+      "title": "Hello LA",
+      "description": "A local’s guide to Los Angeles. This hackathon project won best user experience at hack@brown 2016!",
+      "tags": [["Branding", "Wireframming"], [], []],
+      "link": "http://hello-la.herokuapp.com/"
+    },
+    {
+      "title": "MyHousing",
+      "description": "Northeastern’s housing portal is kinda a mess. But what if it wasn’t? Our final project for Design Process, Context, and Systems explored a new user experience for choosing housing.",
+      "tags": [["User testing", "Wireframming", "Prototyping"],[],[]],
+      "link": ""
+    },
+    {
+      "title": "unsize.",
+      "description": "In Fall 2017 I was on a Scout studio team that worked with unsize, a startup changing the way people shop online. We made a marketing site, updated brand identity, and video guide on how to use their product.",
+      "tags": [["Prototyping", "Wireframming", "User Testing"],["React"],["Filmmaking"]],
+      "link": "https://www.unsize.me/"
+    },
+    {
+      "title": "Portfolio 2.0",
+      "description": "The second iteration of my portfolio site. Written in React, this version built my confidence in frameworks and typescript.",
+      "tags": [["Branding", "Wireframming", "Prototyping"],["React", "Javascript"],[]],
+      "link": ""
+    },
+    {
+      "title": "50 Years: Ed and Laureen",
+      "description": "As one of my first documentary efforts, on my grandparents  50th wedding anniverary I sat down with them and captured their story.",
+      "tags": [[],[],["Photography", "Filmmaking"]],
+      "link": "https://youtu.be/6SgCcd_sWrs"
+    },
+    {
+      "title": "This is Boston.",
+      "description": "When I started school in Boston I fell in love immediately. Soon after I went out and captured the energy and feel of the city.",
+      "tags": [[],[],["Filmmaking"]],
+      "link": "https://youtu.be/PYyz4teTzNc"
+    },
+    {
+      "title": "Scout: Client Spotlight",
+      "description": "I spent a semester on Scout’s marketing team, making motion graphics and short videos for social. This series highlights the four studio teams and what they worked on that semester.",
+      "tags": [[],[],["Filmmaking"]],
+      "link": "https://youtu.be/1Zofl5-7AmA?list=PLNzX5UGbEkhxlCKvSpJKCqNd6iBR0Jm16"
+    },
+    {
+      "title": "",
+      "description": "",
+      "tags": [[],[],[]],
+      "link": ""
+    }
+  ]
+}
