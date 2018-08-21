@@ -1,16 +1,3 @@
-/* Keyframes for landing animation */
-
-@keyframes fadein {
-  from {
-    top: 30px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
 /* Brand colors */
 
 :root {
@@ -35,18 +22,9 @@
   border-color: var(--green);
 }
 
-#redCode {
-  background-color: var(--red); 
+.weight-400 {
+  font-weight: 400;
 }
-
-#blueCode {
-  background-color: var(--blue); 
-}
-
-#greenCode {
-  background-color: var(--green); 
-}
-
 
 /* Edits on built-in elements */
 
@@ -77,7 +55,6 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 30px;
-
 }
 
 h4 {
@@ -100,6 +77,9 @@ ul {
 }
 
 li {
+  margin: 6px 0;
+  font-size: 16px;
+  letter-spacing: .5px;
   font-weight: 300;
   text-decoration: none;
 }
@@ -118,7 +98,6 @@ li {
   margin-right: -15px;
 }
 
-
 /* Custom elements */
 
 .nav {
@@ -131,59 +110,8 @@ li {
   padding: 15px 0;
 }
 
-/* TODO: animate with scrollmagic instead */
-.landing {
-  animation: fadein 1s;
-  padding-bottom: 100px;
-}
-
 .spacer {
   padding: 50px 0;
-}
-
-.experienceh4 {
-  margin-bottom: 0px;
-  /* This keeps the textbox to the min width, because it's used to figure out the underline length */
-  width: min-content; 
-  /* Keeps everything on one line, otherwise and more will split bc of above min-content */
-  white-space: nowrap;
-}
-
-.job {
-  padding-bottom: 5px;
-}
-
-.at {
-  font-weight: 300;
-}
-
-.feature {
-  background: linear-gradient(#419BF9, var(--blue));
-  border-radius: 5px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
-  height: 350px;
-  margin-top: 30px;
-}
-
-#tgc-image {
-  background: url("./images/thisgirlcodes/thisgirlcodes.png") no-repeat center center;
-  background-size: cover;
-}
-
-#tgc-logo {
-  max-width: 100px;
-  display: block;
-  margin: auto;
-}
-
-#scout-logo {
-  max-width: 150px;
-  display: block;
-  margin: auto;
-}
-
-.feature-title {
-  margin: 20px 0 0 0;
 }
 
 .project-category {
@@ -196,45 +124,7 @@ li {
   display: inline-block;
   letter-spacing: 0.2px;
   margin-right: 6px;
-}
-
-.project-tags {
-  margin-bottom: 32px;
-}
-
-.project-description {
-  margin-bottom: 8px;
-}
-
-.other-spacer {
-  margin: 0 0 0 15px;
-  padding-right: 15px;
-  position: relative;
-  width: 100%
-}
-
-#other-title {
-  padding-left: 15px;
-  white-space: nowrap;
-}
-
-/* Starting states */
-
-.underline {
-  height: 7px;
-  width: 0;
-}
-
-#skills {
-  opacity: 0;
-}
-
-.careerCover {
-  height: 33%;
-  width: 100%;
-  background-color: white;
-  position: absolute;
-  transform-origin: right center inherit;
+  margin-bottom: 6px;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -260,21 +150,6 @@ li {
 
   h5 {
     font-size: 40px;
-  }
-
-  li {
-    margin: 6px 0;
-    font-size: 16px;
-    letter-spacing: .5px;
-  }
-
-  .landing {
-    margin-top: 200px;
-  }
-
-  .other-spacer {
-    flex: 0 0 25%;
-    max-width: 25%;
   }
 }
 
@@ -307,21 +182,6 @@ li {
   h5 {
     font-size: 32px;
   }
-
-  li {
-    margin: 6px 0;
-    font-size: 16px;
-    letter-spacing: .5px;
-  }
-
-  .landing {
-    margin-top: 150px;
-  }
-
-  .other-spacer {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
 }
 
 
@@ -352,20 +212,6 @@ li {
 
   h5 {
     font-size: 24px;
-  }
-
-  li {
-    margin: 5px 0;
-    font-size: 16px;
-    letter-spacing: .4px;
-  }
-
-  .landing {
-    margin-top: 100px;
-  }
-
-  .feature-title {
-    padding-bottom: 5px;
   }
 }
 

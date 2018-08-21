@@ -1,0 +1,379 @@
+:root {
+  --red: #F44B48; 
+  --blue: #5D9BCF;
+  --yellow: #FFE044;
+  --orange: #F89751;
+}
+
+#tgc-hero {
+  background: url("./images/thisgirlcodes/hero.png") no-repeat center center;
+  background-size: cover;
+  height: 550px;
+  margin-top: 54px;
+}
+
+#title-card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 12px 12px 0 0 var(--red) ;
+  position: absolute;
+  padding: 32px;
+}
+
+#title-card>h1 {
+  font-size: 54px;
+  line-height: 54px;
+  margin-bottom: 10px;
+}
+
+#title-card>h2 {
+  line-height: 32px;
+}
+
+h3 {
+  margin-bottom: 12px;
+}
+
+p {
+  line-height: 36px;
+}
+
+#type-block {
+  background-color: var(--red);
+  padding: 32px;
+}
+
+#logo-block {
+  background-color: var(--blue);
+  height: min-content;
+}
+
+#type-block>p {
+  color: #ffffff;
+}
+
+#rosie {
+  max-width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.ribbon-color {
+  height: 100%;
+}
+
+.ribbon-text {
+  white-space: nowrap;
+}
+
+.ribbon-text>p {
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+#rosie-red {
+  background-color: var(--red);
+}
+
+#bad-bitch-blue {
+  background-color: var(--blue);
+}
+
+#yellin-yellow {
+  background-color: var(--yellow);
+}
+
+#overturn-orange {
+  background-color: var(--orange);
+}
+
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  position: absolute;
+  padding: 0;
+ 
+  left:0;
+  width: 100vw;
+  max-width: 100%;
+  
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.scrolling-wrapper>.scroll-img {
+  display: inline-block;
+  padding-right: 16px;
+}
+
+#insta {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+
+  .text-block {
+    margin-bottom: 25px;
+  }
+
+  #title-card {
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #rosie {
+    height: 500px;
+    position: absolute;
+  }
+
+  .ribbons {
+    height: 500px;
+    padding-top: 15px;
+  }
+
+  .ribbon-container {
+    margin-bottom: 15px;
+    height: 100px;
+  }
+
+  #logo-block {
+    padding: 100px;
+  }
+
+  .scrolling-wrapper>.scroll-img {
+    height:450px;
+  }
+
+  .scroll-spacer {
+    height: 550px;
+  }
+
+  #pin {
+    position: absolute;
+    padding-top: 100px;
+    width: 350px;
+    height: 350px;
+    margin-left: 100px;
+  }
+
+  #sticker {
+    position: absolute;
+    padding-top: 100px;
+    width: 1122px;
+    height: 350px;
+  }
+
+  #tote {
+    margin-bottom: 100px;
+  }
+
+  #pin>img, #tote>img  {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .text-block {
+    margin-bottom: 25px;
+  }
+
+  #title-card {
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #rosie {
+    height: 400px;
+    position: absolute;
+  }
+
+  .ribbons {
+    height: 400px;
+    padding-top: 15px;
+  }
+
+  .ribbon-container {
+    margin-bottom: 5px;
+    height: 80px;
+  }
+
+  #logo-block {
+    padding: 75px;
+  }
+
+  .scrolling-wrapper>.scroll-img {
+    height:400px;
+  }
+
+  .scroll-spacer {
+    height: 500px;
+  }
+
+  #pin {
+    position: absolute;
+    padding-top: 100px;
+    width: 300px;
+    margin-left: 100px;
+  }
+
+  #sticker {
+    position: absolute;
+    padding-top: 65px;
+    width: 942px;
+  }
+
+  #tote {
+    margin-bottom: 100px;
+  }
+
+  #pin>img, #tote>img  {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .text-block {
+    margin-bottom: 25px;
+  }
+
+  #title-card {
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #rosie {
+    height: 400px;
+    position: absolute;
+  }
+
+  .ribbons {
+    height: 400px;
+    padding-top: 15px;
+  }
+
+  .ribbon-container {
+    margin-bottom: 5px;
+    height: 80px;
+  }
+
+  #logo-block {
+    padding: 75px;
+  }
+
+  .scrolling-wrapper>.scroll-img {
+    height:400px;
+  }
+
+  .scroll-spacer {
+    height: 500px;
+  }
+
+  #pin {
+    position: absolute;
+    padding-top: 100px;
+    width: 225px;
+    margin-left: 50px;
+  }
+
+  #sticker {
+    position: absolute;
+    padding-top: 50px;
+    width: 702px;
+  }
+
+  #tote {
+    margin-bottom: 75px;
+  }
+
+  #pin>img, #tote>img  {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 767px) {
+
+  #landing {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  
+  .text-block {
+    margin-bottom: 25px;
+  }
+
+  p, h3 {
+    text-align: left;
+  }
+
+  #title-card {
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #type-block {
+    margin: 0 15px;
+  }
+
+  #logo-block {
+    margin: 0 15px;
+    padding: 75px;
+  }
+
+  #rosie {
+    margin-top: 0px;
+    max-width: 100%;
+  }
+
+  .ribbons {
+    margin-bottom: 24px;
+  }
+
+  .ribbon-container {
+    margin: 2px;
+  }
+
+  .ribbon-color {
+    margin-bottom: 30px;
+    height: 100;
+    margin-top: -5px;
+    z-index: -1;
+  }
+
+  .ribbon-text {
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+    white-space: nowrap;
+    padding: 0;
+  }
+
+  .ribbon-text>p {
+    margin-bottom: 0;
+    line-height: 24px;
+  }
+
+  .scrolling-wrapper>.scroll-img {
+    height:200px;
+  }
+
+  .scroll-spacer {
+    height: 275px;
+  }
+}
+

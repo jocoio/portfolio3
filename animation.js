@@ -23,16 +23,16 @@ function skills(scrollMagicController) {
   var skillsTl = new TimelineMax();
 
   // Sets width of lines to width of category name
-  var redWidth = $("#redCode").prev().width();
-  var blueWidth = $("#blueCode").prev().width();
-  var greenWidth = $("#greenCode").prev().width();
+  var redWidth = $("#redLine").prev().width();
+  var blueWidth = $("#blueLine").prev().width();
+  var greenWidth = $("#greenLine").prev().width();
 
   // Skills timeline
   skillsTl
     .to("#skills", .4, { opacity: 1 }, 0) // Fade skills in
-    .to("#redCode", 0.25, { width: redWidth }, .5) // Red sweep
-    .to("#blueCode", 0.25, { width: blueWidth }, .6) // Blue sweep
-    .to("#greenCode", 0.25, { width: greenWidth }, .7); // Green sweep
+    .to("#redLine", 0.25, { width: redWidth }, .5) // Red sweep
+    .to("#blueLine", 0.25, { width: blueWidth }, .6) // Blue sweep
+    .to("#greenLine", 0.25, { width: greenWidth }, .7); // Green sweep
 
   // Skills scene
   var skillsScene = new ScrollMagic.Scene({
@@ -51,8 +51,8 @@ function experience(scrollMagicController) {
 
   // Color change on scout name timeline
   colorChangeTl
-    .to("#scout", 0.5, { color: "#4370B1" }, 1.5) // Red
-    .to("#scout", 0.5, { color: "#F67258" }, 3) // Blue
+    .to("#scout", 0.5, { color: "#378BD2" }, 1.5) // Blue
+    .to("#scout", 0.5, { color: "#F67258" }, 3) // Red
     .to("#scout", 0.5, { color: "#3EAE42" }, 4.5) // Green
     .repeat(-1)
 
@@ -62,7 +62,7 @@ function experience(scrollMagicController) {
     .to("#jhandyCover", .4, { width: 0 }, .1)
     .to("#scoutCover", .4, { width: 0 }, .2)
     .to("#clarks", 0.25, { color: "#F67258" }, .8) // Red sweep
-    .to("#jhandy", 0.25, { color: "#4370B1" }, .9) // Blue sweep
+    .to("#jhandy", 0.25, { color: "#378BD2" }, .9) // Blue sweep
     .to("#scout", 0.25, { color: "#3EAE42" }, 1) // Green sweep
     .add(colorChangeTl, 1.5)
 
