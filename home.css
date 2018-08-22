@@ -166,6 +166,10 @@
   .feature-title {
     padding-bottom: 5px;
   }
+
+  #other-title {
+    width: 100%;
+  }
 }
 
 

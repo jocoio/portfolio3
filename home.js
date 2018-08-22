@@ -4,16 +4,16 @@ $(function () {
   // Init ScrollMagic Controller
   var scrollMagicController = new ScrollMagic.Controller();
 
-  var mobileController = new ScrollMagic.Controller();
+  var desktopController = new ScrollMagic.Controller();
 
   skills(scrollMagicController);
   experience(scrollMagicController);
   recentWork(scrollMagicController)
-  otherWork(mobileController);
+  
 
 
-  if ($(window).width() <= 768) {
-    mobileController.enabled(false);
+  if ($(window).width() >= 768) {
+    otherWork(scrollMagicController);
   }
 });
 
@@ -104,28 +104,28 @@ function recentWork(scrollMagicController) {
     // .addIndicators();
 
 
-  // Scout timeline
-  scoutTl
-    .fromTo("#scout-cover", .25, { top: 40, opacity: 0 }, { top: 0, opacity: 1 }, 0) // Fade cover in
-    .fromTo("#scout-logo", .25, { y: 170, opacity: 0 }, { y: 145, opacity: 1 }, .3) // Fade logo in
-    ;
+  // // Scout timeline
+  // scoutTl
+  //   .fromTo("#scout-cover", .25, { top: 40, opacity: 0 }, { top: 0, opacity: 1 }, 0) // Fade cover in
+  //   .fromTo("#scout-logo", .25, { y: 170, opacity: 0 }, { y: 145, opacity: 1 }, .3) // Fade logo in
+  //   ;
 
-  // Scout scene
-  var scoutScene = new ScrollMagic.Scene({
-    triggerElement: "#scout-section",
-    offset: 0, // start scene 0 above trigger
-  })
-    .setTween(scoutTl)
-    .addTo(scrollMagicController)
-    // .addIndicators();
+  // // Scout scene
+  // var scoutScene = new ScrollMagic.Scene({
+  //   triggerElement: "#scout-section",
+  //   offset: 0, // start scene 0 above trigger
+  // })
+  //   .setTween(scoutTl)
+  //   .addTo(scrollMagicController)
+  //   // .addIndicators();
 }
 
 // Handles other work animation
-function otherWork(mobileController) {
+function otherWork(scrollMagicController) {
 
-  var scene = new ScrollMagic.Scene({ triggerElement: "#ok" })
+  var scene = new ScrollMagic.Scene({ triggerElement: "#other-row" })
     .setPin("#other-title", { spacerClass: "other-spacer" })
-    .addTo(mobileController)
+    .addTo(scrollMagicController)
     // .addIndicators();
 }
 

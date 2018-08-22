@@ -17,6 +17,9 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 12px 12px 0 0 var(--red) ;
   position: absolute;
   padding: 32px;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #title-card>h1 {
@@ -38,19 +41,41 @@ p {
   line-height: 36px;
 }
 
+/* Type Section */
+
 #type-block {
   background-color: var(--red);
   padding: 32px;
 }
+
+#type-cover {
+  position:absolute;
+  background-color: var(--red);
+  width: 100%;
+  height: 100%;
+  margin: -32px;
+}
+
+#type-block>p {
+  color: #ffffff;
+}
+
+/* Logo section */
 
 #logo-block {
   background-color: var(--blue);
   height: min-content;
 }
 
-#type-block>p {
-  color: #ffffff;
+#logo-cover {
+  position:absolute;
+  background-color: var(--blue);
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
 }
+
+/* Color Section */
 
 #rosie {
   max-width: 100%;
@@ -87,6 +112,44 @@ p {
   background-color: var(--orange);
 }
 
+/* Poster section */
+
+#gradient-container {
+  background-image: url("./images/thisgirlcodes/girl-blank.jpg");
+  background-repeat: no-repeat;
+  z-index: -1;
+  height: 100%;
+}
+
+.gradient {
+  background-image: url("./images/thisgirlcodes/test.jpg");
+  background-repeat: no-repeat;
+}
+
+#g1 {
+  background-position-y: 0px;
+}
+
+#g2 {
+  background-position-y: 20%;
+}
+
+#g3 {
+  background-position-y: 40%;
+}
+
+#g4 {
+  background-position-y: 60%;
+}
+
+#g5 {
+  background-position-y: 80%;
+}
+
+#g6 {
+  background-position-y: 100%;
+}
+
 .scrolling-wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
@@ -110,6 +173,8 @@ p {
   padding-right: 16px;
 }
 
+/* Social section */
+
 #insta {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 }
@@ -118,15 +183,13 @@ p {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+  
+  .ribbon-row {
+    width: 0%;
+  }
 
   .text-block {
     margin-bottom: 25px;
-  }
-
-  #title-card {
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   #rosie {
@@ -146,6 +209,23 @@ p {
 
   #logo-block {
     padding: 100px;
+  }
+
+  #logo-cover {
+    margin: -100px;
+  }
+
+  /* Poster section */
+
+  #gradient-container {
+    background-size: 624.5px 426px;
+    width: 624.5px;
+    position: absolute;
+  }
+
+  .gradient {
+    background-size: 624.5px;
+    height: 71px;
   }
 
   .scrolling-wrapper>.scroll-img {
@@ -184,14 +264,12 @@ p {
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .ribbon-row {
+    width: 0%;
+  }
+  
   .text-block {
     margin-bottom: 25px;
-  }
-
-  #title-card {
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   #rosie {
@@ -209,8 +287,26 @@ p {
     height: 80px;
   }
 
+  /* Poster section */
+
+  #gradient-container {
+    background-size: 519.5px 360px;
+    width: 519.5px;
+    height: 360px;
+    position: absolute;
+  }
+  
+  .gradient {
+    background-size: 519.5px;
+    height: 60px;
+  }
+
   #logo-block {
     padding: 75px;
+  }
+
+  #logo-cover {
+    margin: -75px;
   }
 
   .scrolling-wrapper>.scroll-img {
@@ -243,16 +339,12 @@ p {
   }
 }
 
+/* Medium devices */
+
 @media (min-width: 768px) and (max-width: 991px) {
 
   .text-block {
     margin-bottom: 25px;
-  }
-
-  #title-card {
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   #rosie {
@@ -270,8 +362,25 @@ p {
     height: 80px;
   }
 
+  /* Poster section */
+
+  #gradient-container {
+    background-size: 555px 384px;
+    width: 555px;
+    position: absolute;
+  }
+
+  .gradient {
+    background-size: 555px;
+    height: 64px;
+  }
+
   #logo-block {
     padding: 75px;
+  }
+
+  #logo-cover {
+    margin: -75px;
   }
 
   .scrolling-wrapper>.scroll-img {
@@ -313,6 +422,14 @@ p {
     margin-left: -24px;
     margin-right: -24px;
   }
+
+  #tgc-hero {
+    height: 450px;
+  }
+
+  #title-card {
+    top: 300px;
+  }
   
   .text-block {
     margin-bottom: 25px;
@@ -320,12 +437,6 @@ p {
 
   p, h3 {
     text-align: left;
-  }
-
-  #title-card {
-    top: 60%;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   #type-block {
@@ -337,12 +448,30 @@ p {
     padding: 75px;
   }
 
+  #logo-cover {
+    margin: -75px;
+  }
+
+  /* Poster section */
+
+  #gradient-container {
+    /* Width set in js */
+    /* Background size set in js */
+    position: absolute;
+  }
+
+  .gradient {
+    background-size: 100%;
+    /* Height is set is js */
+  }
+
   #rosie {
     margin-top: 0px;
     max-width: 100%;
   }
 
   .ribbons {
+    height: 200px;
     margin-bottom: 24px;
   }
 
@@ -352,7 +481,6 @@ p {
 
   .ribbon-color {
     margin-bottom: 30px;
-    height: 100;
     margin-top: -5px;
     z-index: -1;
   }
