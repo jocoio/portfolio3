@@ -6,7 +6,7 @@
 }
 
 #tgc-hero {
-  background: url("./images/thisgirlcodes/hero.png") no-repeat center center;
+  background: url("./images/thisgirlcodes/hero.jpg") no-repeat center center;
   background-size: cover;
   height: 550px;
   margin-top: 54px;
@@ -14,12 +14,9 @@
 
 #title-card {
   background-color: #ffffff;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 12px 12px 0 0 var(--red) ;
-  position: absolute;
+  opacity: 0;
   padding: 32px;
-  top: 400px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: -200px;
 }
 
 #title-card>h1 {
@@ -419,16 +416,14 @@ p {
 @media (max-width: 767px) {
 
   #landing {
+    height: 450px;
     margin-left: -24px;
     margin-right: -24px;
   }
 
   #tgc-hero {
     height: 450px;
-  }
-
-  #title-card {
-    top: 300px;
+    position: absolute;
   }
   
   .text-block {
@@ -499,6 +494,10 @@ p {
 
   .scrolling-wrapper>.scroll-img {
     height:200px;
+  }
+
+  .spacer {
+    padding: 30px 0;
   }
 
   .scroll-spacer {

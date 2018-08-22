@@ -14,9 +14,11 @@ $(function () {
   var mobileController = new ScrollMagic.Controller();
   var desktopController = new ScrollMagic.Controller();
 
+  landing(tgcController);
   type(tgcController);
   logo(tgcController);
   gradient(tgcController);
+  social(tgcController);
 
   // Mobile
   if ($(window).width() <= 768) {
@@ -33,6 +35,26 @@ $(function () {
   }
 });
 
+// Handles landing animation
+function landing(tgcController) {
+  var landingTl = new TimelineMax();
+
+  landingTl
+    .fromTo("#title-card", .4, { opacity: 0 }, { opacity: 1 })
+    .fromTo("#title-card", .2,
+      { left: "+=15", top: "+=15", boxShadow: "none" },
+      { left: "-=15", top: "-=15", boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.3), 12px 12px 0 0 #F44B48" }, .6)
+    .staggerFromTo($(".project-category"), .5, {opacity: 0}, {opacity: 1}, .1, 1)
+
+  var typeScene = new ScrollMagic.Scene({
+    triggerElement: "#landing",
+    offset: 0
+  })
+    .setTween(landingTl)
+    .addTo(tgcController)
+    //.addIndicators();
+}
+
 // Handles type animation
 function type(tgcController) {
   var typeTl = new TimelineMax();
@@ -45,7 +67,7 @@ function type(tgcController) {
   })
     .setTween(typeTl)
     .addTo(tgcController)
-    // .addIndicators();
+  // .addIndicators();
 }
 
 // Handles logo animation
@@ -60,7 +82,7 @@ function logo(tgcController) {
   })
     .setTween(logoTl)
     .addTo(tgcController)
-    // .addIndicators();
+  // .addIndicators();
 };
 
 // Handles color animation
@@ -98,7 +120,7 @@ function mobileColor(mobileController) {
   })
     .setTween(mobileColorTl)
     .addTo(mobileController)
-    // .addIndicators();
+  // .addIndicators();
 };
 
 // Handles gradient animation
@@ -117,7 +139,7 @@ function gradient(tgcController) {
   })
     .setTween(gradientTl)
     .addTo(tgcController)
-    // .addIndicators();
+  // .addIndicators();
 };
 
 // Mobile sizing assistance for gradients
@@ -133,8 +155,23 @@ function setGradients() {
   $(".gradient").css("background-size", gradWidth + "px " + gradHeight + "px");
 
   gradientScene.offset(0);
-  gradientScene.duration(200);
+  gradientScene.duration(250);
 };
+
+// Handles social animation
+function social(tgcController) {
+  var socialTl = new TimelineMax();
+
+  socialTl.fromTo("#social", .2, { paddingTop: "+=15", opacity: 0 }, {paddingTop: "-=15", opacity: 1})
+
+  var typeScene = new ScrollMagic.Scene({
+    triggerElement: "#social",
+    offset: -100
+  })
+    .setTween(socialTl)
+    .addTo(tgcController)
+  // .addIndicators();
+}
 
 
 // Handles mobile environment
@@ -146,7 +183,7 @@ function mobileEnvironment(mobileController) {
     var currentEnv = this;
 
     var tweenEnv = new TimelineMax()
-      .fromTo(currentEnv, 0.25, { opacity: 0, top: 15 }, { opacity: 1, top: 0 });
+      .fromTo(currentEnv, 0.25, { opacity: 0, top: "+=15" }, { opacity: 1, top: "-=15" });
 
     var mobileEnvScene = new ScrollMagic.Scene({
       triggerElement: currentEnv,
@@ -166,7 +203,7 @@ function desktopEnvironment(desktopController) {
     var currentEnvi = this;
 
     var tweenEnvi = new TimelineMax()
-      .fromTo(currentEnvi, .3, { opacity: 0, marginTop: 15 }, { opacity: 1, marginTop: 0 });
+      .fromTo(currentEnvi, .3, { opacity: 0, top: "+=15" }, { opacity: 1, top: "-=15" });
 
     var desktopEnvScene = new ScrollMagic.Scene({
       triggerElement: currentEnvi,

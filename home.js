@@ -8,7 +8,8 @@ $(function () {
 
   skills(scrollMagicController);
   experience(scrollMagicController);
-  recentWork(scrollMagicController)
+  recentWork(scrollMagicController);
+  landing(scrollMagicController);
   
 
 
@@ -16,6 +17,22 @@ $(function () {
     otherWork(scrollMagicController);
   }
 });
+
+// Handles landing animation
+function landing(scrollMagicController) {
+  var landingTl = new TimelineMax();
+
+  landingTl
+    .fromTo(".landing", .5, { opacity: 0, top: "+=15" }, { opacity: 1, top: "-=15" })
+
+  var typeScene = new ScrollMagic.Scene({
+    triggerElement: ".landing",
+    offset: 0
+  })
+    .setTween(landingTl)
+    .addTo(scrollMagicController)
+    // .addIndicators();
+}
 
 // Handles skills animation
 function skills(scrollMagicController) {
