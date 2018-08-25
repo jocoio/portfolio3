@@ -203,7 +203,7 @@ function desktopEnvironment(desktopController) {
     var currentEnvi = this;
 
     var tweenEnvi = new TimelineMax()
-      .fromTo(currentEnvi, .3, { opacity: 0, top: "+=15" }, { opacity: 1, top: "-=15" });
+      .fromTo(currentEnvi, .3, { opacity: 0, paddingTop: "+=15" }, { opacity: 1, paddingTop: "-=15" });
 
     var desktopEnvScene = new ScrollMagic.Scene({
       triggerElement: currentEnvi,
