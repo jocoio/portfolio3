@@ -121,20 +121,20 @@ function recentWork(scrollMagicController) {
     // .addIndicators();
 
 
-  // // Scout timeline
-  // scoutTl
-  //   .fromTo("#scout-cover", .25, { top: 40, opacity: 0 }, { top: 0, opacity: 1 }, 0) // Fade cover in
-  //   .fromTo("#scout-logo", .25, { y: 170, opacity: 0 }, { y: 145, opacity: 1 }, .3) // Fade logo in
-  //   ;
+  // Scout timeline
+  scoutTl
+    .fromTo("#scout-cover", .25, { top: 40, opacity: 0 }, { top: 0, opacity: 1 }, 0) // Fade cover in
+    .fromTo("#scout-logo", .25, { y: 170, opacity: 0 }, { y: 145, opacity: 1 }, .3) // Fade logo in
+    ;
 
-  // // Scout scene
-  // var scoutScene = new ScrollMagic.Scene({
-  //   triggerElement: "#scout-section",
-  //   offset: 0, // start scene 0 above trigger
-  // })
-  //   .setTween(scoutTl)
-  //   .addTo(scrollMagicController)
-  //   // .addIndicators();
+  // Scout scene
+  var scoutScene = new ScrollMagic.Scene({
+    triggerElement: "#scout-section",
+    offset: 0, // start scene 0 above trigger
+  })
+    .setTween(scoutTl)
+    .addTo(scrollMagicController)
+    // .addIndicators();
 }
 
 // Handles other work animation
