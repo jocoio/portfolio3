@@ -1,24 +1,16 @@
-// Centers photo scrollers
-$(function () {
-  var knows = document.getElementById("knows");
-  var stand = document.getElementById("stand");
-
-  knows.scrollLeft = $(knows).children().eq(0).width() + 20 - (($(window).width() / 2) - ($(knows).children().eq(1).width() / 2));
-  stand.scrollLeft = $(stand).children().eq(0).width() + 20 - (($(stand).width() / 2) - ($(stand).children().eq(1).width() / 2));
-});
-
 // Main function
 $(function () {
   // Init ScrollMagic Controller
-  var tgcController = new ScrollMagic.Controller();
+  var scoutController = new ScrollMagic.Controller();
   var mobileController = new ScrollMagic.Controller();
   var desktopController = new ScrollMagic.Controller();
 
-  landing(tgcController);
-  type(tgcController);
-  logo(tgcController);
-  gradient(tgcController);
-  social(tgcController);
+  landing(scoutController);
+  // type(scoutController);
+  design(scoutController);
+  test(scoutController)
+  // gradient(scoutController);
+  // social(scoutController);
 
   // Mobile
   if ($(window).width() <= 768) {
@@ -36,7 +28,7 @@ $(function () {
 });
 
 // Handles landing animation
-function landing(tgcController) {
+function landing(scoutController) {
   var landingTl = new TimelineMax();
 
   landingTl
@@ -47,131 +39,131 @@ function landing(tgcController) {
     .staggerFromTo($(".project-category"), .5, {opacity: 0}, {opacity: 1}, .1, 1)
 
   var typeScene = new ScrollMagic.Scene({
-    triggerElement: "#landing",
+    triggerElement: ".landing",
     offset: 0
   })
     .setTween(landingTl)
-    .addTo(tgcController)
+    .addTo(scoutController)
     //.addIndicators();
 }
 
-// Handles type animation
-function type(tgcController) {
-  var typeTl = new TimelineMax();
+// Handles Design animation
+function design(scoutController) {
+  var designTl = new TimelineMax();
 
-  typeTl.to("#type-cover", .4, { width: 0 })
+  designTl.to("#design", .25, { opacity: 1, marginTop: 0 })
 
-  var typeScene = new ScrollMagic.Scene({
-    triggerElement: "#type-cover",
+  var designScene = new ScrollMagic.Scene({
+    triggerElement: "#design",
     offset: 0
   })
-    .setTween(typeTl)
-    .addTo(tgcController)
+    .setTween(designTl)
+    .addTo(scoutController)
   // .addIndicators();
-}
+};
 
-// Handles logo animation
-function logo(tgcController) {
-  var logoTl = new TimelineMax();
+// Handles Test animation
+function test(scoutController) {
+  var testTl = new TimelineMax();
 
-  logoTl.to("#logo-cover", .4, { width: 0 })
+  testTl.fromTo("#test-img", .25, { y: "+=15", opacity: 0 }, {y: "-=15", opacity: 1})
 
-  var logoScene = new ScrollMagic.Scene({
-    triggerElement: "#logo-cover",
+  var testScene = new ScrollMagic.Scene({
+    triggerElement: "#test-img",
     offset: 0
   })
-    .setTween(logoTl)
-    .addTo(tgcController)
+    .setTween(testTl)
+    .addTo(scoutController)
   // .addIndicators();
 };
 
-// Handles color animation
-function desktopColor(desktopController) {
+// // Handles color animation
+// function desktopColor(desktopController) {
 
-  // Desktop animation
-  var desktopColorTl = new TimelineMax();
+//   // Desktop animation
+//   var desktopColorTl = new TimelineMax();
 
-  desktopColorTl
-    .staggerFromTo($(".ribbon-row"), .4, { height: "100%" }, { width: "100%" }, .1, 0)
-    .staggerFromTo($(".ribbon-text"), .6, { opacity: 0 }, { opacity: 1 }, .1, .6)
+//   desktopColorTl
+//     .staggerFromTo($(".ribbon-row"), .4, { height: "100%" }, { width: "100%" }, .1, 0)
+//     .staggerFromTo($(".ribbon-text"), .6, { opacity: 0 }, { opacity: 1 }, .1, .6)
 
-  var desktopColorScene = new ScrollMagic.Scene({
-    triggerElement: ".ribbons",
-    offset: 50
-  })
-    .setTween(desktopColorTl)
-    .addTo(desktopController)
-  // .addIndicators();
-};
+//   var desktopColorScene = new ScrollMagic.Scene({
+//     triggerElement: ".ribbons",
+//     offset: 50
+//   })
+//     .setTween(desktopColorTl)
+//     .addTo(desktopController)
+//   // .addIndicators();
+// };
 
-// Handles color animation
-function mobileColor(mobileController) {
+// // Handles color animation
+// function mobileColor(mobileController) {
 
-  // Mobile animation
-  var mobileColorTl = new TimelineMax();
+//   // Mobile animation
+//   var mobileColorTl = new TimelineMax();
 
-  mobileColorTl
-    .staggerFromTo($(".ribbon-color"), .4, { height: 0 }, { height: 100 }, .1, 0)
-    .staggerFromTo($(".ribbon-text"), .6, { opacity: 0 }, { opacity: 1 }, .1, .6)
+//   mobileColorTl
+//     .staggerFromTo($(".ribbon-color"), .4, { height: 0 }, { height: 100 }, .1, 0)
+//     .staggerFromTo($(".ribbon-text"), .6, { opacity: 0 }, { opacity: 1 }, .1, .6)
 
-  var mobileColorScene = new ScrollMagic.Scene({
-    triggerElement: ".ribbons",
-    offset: 0
-  })
-    .setTween(mobileColorTl)
-    .addTo(mobileController)
-  // .addIndicators();
-};
+//   var mobileColorScene = new ScrollMagic.Scene({
+//     triggerElement: ".ribbons",
+//     offset: 0
+//   })
+//     .setTween(mobileColorTl)
+//     .addTo(mobileController)
+//   // .addIndicators();
+// };
 
-// Handles gradient animation
-function gradient(tgcController) {
+// // Handles gradient animation
+// function gradient(scoutController) {
 
-  // Desktop animation
-  var gradientTl = new TimelineMax();
+//   // Desktop animation
+//   var gradientTl = new TimelineMax();
 
-  gradientTl
-    .staggerFromTo($(".gradient"), .6, { width: 0 }, { width: "100%" }, .1)
+//   gradientTl
+//     .staggerFromTo($(".gradient"), .6, { width: 0 }, { width: "100%" }, .1)
 
-  gradientScene = new ScrollMagic.Scene({
-    triggerElement: ".gradient",
-    duration: 250,
-    offset: 50
-  })
-    .setTween(gradientTl)
-    .addTo(tgcController)
-  // .addIndicators();
-};
+//   gradientScene = new ScrollMagic.Scene({
+//     triggerElement: ".gradient",
+//     duration: 250,
+//     offset: 50
+//   })
+//     .setTween(gradientTl)
+//     .addTo(scoutController)
+//   // .addIndicators();
+// };
 
-// Mobile sizing assistance for gradients
-function setGradients() {
+// // Mobile sizing assistance for gradients
+// function setGradients() {
 
-  var gradWidth = $("#gradient-overlord").width();
-  var gradHeight = gradWidth / 1.44416;
+//   var gradWidth = $("#gradient-overlord").width();
+//   var gradHeight = gradWidth / 1.44416;
 
-  $("#gradient-container").width(gradWidth);
-  $("#gradient-container").css("background-size", gradWidth + "px " + gradHeight + "px");
+//   $("#gradient-container").width(gradWidth);
+//   $("#gradient-container").css("background-size", gradWidth + "px " + gradHeight + "px");
 
-  $(".gradient").height(gradHeight / 6);
-  $(".gradient").css("background-size", gradWidth + "px " + gradHeight + "px");
+//   $(".gradient").height(gradHeight / 6);
+//   $(".gradient").css("background-size", gradWidth + "px " + gradHeight + "px");
 
-  gradientScene.offset(0);
-  gradientScene.duration(250);
-};
+//   gradientScene.offset(0);
+//   gradientScene.duration(250);
+// };
 
-// Handles social animation
-function social(tgcController) {
-  var socialTl = new TimelineMax();
+// // Handles social animation
+// function social(scoutController) {
+//   var socialTl = new TimelineMax();
 
-  socialTl.fromTo("#social", .2, { paddingTop: "+=15", opacity: 0 }, {paddingTop: "-=15", opacity: 1})
+//   socialTl.fromTo("#social", .2, { paddingTop: "+=15", opacity: 0 }, {paddingTop: "-=15", opacity: 1})
 
-  var typeScene = new ScrollMagic.Scene({
-    triggerElement: "#social",
-    offset: -100
-  })
-    .setTween(socialTl)
-    .addTo(tgcController)
-  // .addIndicators();
-}
+//   var typeScene = new ScrollMagic.Scene({
+//     triggerElement: "#social",
+//     offset: -100
+//   })
+//     .setTween(socialTl)
+//     .addTo(scoutController)
+//   // .addIndicators();
+// }
 
 
 // Handles mobile environment
