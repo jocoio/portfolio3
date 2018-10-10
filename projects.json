@@ -19,16 +19,16 @@
       "link": ""
     },
     {
+      "title": "Portfolio 2.0",
+      "description": "The second iteration of my portfolio site. Written in React, this version built my confidence in frameworks and typescript.",
+      "tags": [["Branding", "Wireframing", "Prototyping"],["React", "Javascript"],[]],
+      "link": "https://jocoio.github.io/portfolio2.0/"
+    },
+    {
       "title": "unsize.",
       "description": "In Fall 2017 I was on a Scout studio team that worked with unsize, a startup changing the way people shop online. We made a marketing site, updated brand identity, and video guide on how to use their product.",
       "tags": [["Prototyping", "Wireframing", "User Testing"],["React"],["Filmmaking"]],
       "link": "https://www.unsize.me/"
-    },
-    {
-      "title": "Portfolio 2.0",
-      "description": "The second iteration of my portfolio site. Written in React, this version built my confidence in frameworks and typescript.",
-      "tags": [["Branding", "Wireframing", "Prototyping"],["React", "Javascript"],[]],
-      "link": ""
     },
     {
       "title": "50 Years: Ed and Laureen",
