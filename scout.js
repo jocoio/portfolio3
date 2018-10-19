@@ -1,21 +1,23 @@
 // Runs on startup
-$(function () {
-  resizeStrip();
-});
+$(document.body).ready(
+  $(function () {
+    resizeStrip();
+  })
+);
 
 var globalResizeTimer = null;
 
 // Runs the resie function 200ms after window has stopped moving
-$(window).resize(function() {
-    if(globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
-    globalResizeTimer = window.setTimeout(function() {
-        resizeStrip();
-    }, 200);
+$(window).resize(function () {
+  if (globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
+  globalResizeTimer = window.setTimeout(function () {
+    resizeStrip();
+  }, 200);
 });
 
 // Resizes blue strip
 function resizeStrip() {
-    $("#blue-strip").height($("#proto-container").height() - 100);
+  $("#blue-strip").height($("#proto-container").height() - 100);
 }
 
 

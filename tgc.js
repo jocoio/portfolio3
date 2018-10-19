@@ -1,11 +1,13 @@
 // Centers photo scrollers
-$(function () {
-  var knows = document.getElementById("knows");
-  var stand = document.getElementById("stand");
+$(document.body).ready(
+  $(function () {
+    var knows = document.getElementById("knows");
+    var stand = document.getElementById("stand");
 
-  knows.scrollLeft = $(knows).children().eq(0).width() + 20 - (($(window).width() / 2) - ($(knows).children().eq(1).width() / 2));
-  stand.scrollLeft = $(stand).children().eq(0).width() + 20 - (($(stand).width() / 2) - ($(stand).children().eq(1).width() / 2));
-});
+    knows.scrollLeft = $(knows).children().eq(0).width() + 20 - (($(window).width() / 2) - ($(knows).children().eq(1).width() / 2));
+    stand.scrollLeft = $(stand).children().eq(0).width() + 20 - (($(stand).width() / 2) - ($(stand).children().eq(1).width() / 2));
+  })
+);
 
 // Main function
 $(function () {
@@ -44,7 +46,7 @@ function landing(tgcController) {
     .fromTo("#title-card", .2,
       { left: "+=15", top: "+=15", boxShadow: "none" },
       { left: "-=15", top: "-=15", boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.3), 12px 12px 0 0 #F44B48" }, .6)
-    .staggerFromTo($(".project-category"), .5, {opacity: 0}, {opacity: 1}, .1, 1)
+    .staggerFromTo($(".project-category"), .5, { opacity: 0 }, { opacity: 1 }, .1, 1)
 
   var typeScene = new ScrollMagic.Scene({
     triggerElement: "#landing",
@@ -52,7 +54,7 @@ function landing(tgcController) {
   })
     .setTween(landingTl)
     .addTo(tgcController)
-    //.addIndicators();
+  //.addIndicators();
 }
 
 // Handles type animation
@@ -162,7 +164,7 @@ function setGradients() {
 function social(tgcController) {
   var socialTl = new TimelineMax();
 
-  socialTl.fromTo("#social", .2, { paddingTop: "+=15", opacity: 0 }, {paddingTop: "-=15", opacity: 1})
+  socialTl.fromTo("#social", .2, { paddingTop: "+=15", opacity: 0 }, { paddingTop: "-=15", opacity: 1 })
 
   var typeScene = new ScrollMagic.Scene({
     triggerElement: "#social",

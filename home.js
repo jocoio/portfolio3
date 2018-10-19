@@ -1,22 +1,22 @@
-// When the DOM is ready
-$(function () {
+// When the document body is ready
+$(document.body).ready(
+  $(function () {
 
-  // Init ScrollMagic Controller
-  var scrollMagicController = new ScrollMagic.Controller();
+    // Init ScrollMagic Controller
+    var scrollMagicController = new ScrollMagic.Controller();
 
-  var desktopController = new ScrollMagic.Controller();
+    var desktopController = new ScrollMagic.Controller();
 
-  skills(scrollMagicController);
-  experience(scrollMagicController);
-  recentWork(scrollMagicController);
-  landing(scrollMagicController);
-  
+    skills(scrollMagicController);
+    experience(scrollMagicController);
+    recentWork(scrollMagicController);
+    landing(scrollMagicController);
 
-
-  if ($(window).width() >= 768) {
-    otherWork(scrollMagicController);
-  }
-});
+    if ($(window).width() >= 768) {
+      otherWork(scrollMagicController);
+    }
+  })
+);
 
 // Handles landing animation
 function landing(scrollMagicController) {
@@ -31,7 +31,7 @@ function landing(scrollMagicController) {
   })
     .setTween(landingTl)
     .addTo(scrollMagicController)
-    // .addIndicators();
+  // .addIndicators();
 }
 
 // Handles skills animation
@@ -58,7 +58,7 @@ function skills(scrollMagicController) {
   })
     .setTween(skillsTl)
     .addTo(scrollMagicController)
-    // .addIndicators();
+  // .addIndicators();
 }
 
 // Handles experience animation
@@ -96,7 +96,7 @@ function experience(scrollMagicController) {
     })
     .setTween(experienceTl)
     .addTo(scrollMagicController)
-    // .addIndicators();
+  // .addIndicators();
 }
 
 // Handles recent work animation
@@ -118,7 +118,7 @@ function recentWork(scrollMagicController) {
   })
     .setTween(tgcTl)
     .addTo(scrollMagicController)
-    // .addIndicators();
+  // .addIndicators();
 
 
   // Scout timeline
@@ -134,7 +134,7 @@ function recentWork(scrollMagicController) {
   })
     .setTween(scoutTl)
     .addTo(scrollMagicController)
-    // .addIndicators();
+  // .addIndicators();
 }
 
 // Handles other work animation
@@ -143,7 +143,7 @@ function otherWork(scrollMagicController) {
   var scene = new ScrollMagic.Scene({ triggerElement: "#other-row" })
     .setPin("#other-title", { spacerClass: "other-spacer" })
     .addTo(scrollMagicController)
-    // .addIndicators();
+  // .addIndicators();
 }
 
 
