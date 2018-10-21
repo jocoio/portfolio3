@@ -49,7 +49,7 @@ function landing(tgcController) {
     .staggerFromTo($(".project-category"), .5, { opacity: 0 }, { opacity: 1 }, .1, 1)
 
   var typeScene = new ScrollMagic.Scene({
-    triggerElement: "#landing",
+    triggerElement: ".landing",
     offset: 0
   })
     .setTween(landingTl)
