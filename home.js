@@ -5,8 +5,6 @@ $(document.body).ready(
     // Init ScrollMagic Controller
     var scrollMagicController = new ScrollMagic.Controller();
 
-    var desktopController = new ScrollMagic.Controller();
-
     skills(scrollMagicController);
     experience(scrollMagicController);
     recentWork(scrollMagicController);
