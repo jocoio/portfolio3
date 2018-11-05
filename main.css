@@ -68,7 +68,7 @@ h5 {
 
 p {
   font-weight: 300;
-  letter-spacing: .5px;
+  letter-spacing: .4px;
 }
 
 ul {
@@ -125,6 +125,7 @@ li {
   letter-spacing: 0.2px;
   margin-right: 6px;
   margin-bottom: 6px;
+  font-weight: 400;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
