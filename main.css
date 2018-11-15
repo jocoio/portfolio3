@@ -28,8 +28,8 @@
 
 /* Edits on built-in elements */
 
-h1, h2, h3, h4, h5, h6, p, a, li {
-  font-family: 'Source Sans Pro', sans-serif;
+h1, h3, h4, h5, h2, h6, p, a, li {
+  font-family: 'Work Sans', sans-serif;
   color: #303030;
 }
 
@@ -48,27 +48,27 @@ h1 {
 }
 
 h2 {
-  font-weight: 300;
+  font-weight: 700;
 }
 
 h3 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+  font-weight: 300;
 }
 
 h4 {
   font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
 }
 
-/* TODO: change this to H2, move everything down */
 h5 {
   font-weight: 700;
 }
 
 p {
   font-weight: 300;
-  letter-spacing: .4px;
+  letter-spacing: 0px;
 }
 
 ul {
@@ -79,7 +79,7 @@ ul {
 li {
   margin: 6px 0;
   font-size: 16px;
-  letter-spacing: .5px;
+  letter-spacing: 0px;
   font-weight: 300;
   text-decoration: none;
 }
@@ -122,7 +122,7 @@ li {
   padding: 4px 8px;
   font-size: 14px;
   display: inline-block;
-  letter-spacing: 0.2px;
+  letter-spacing: 0px;
   margin-right: 6px;
   margin-bottom: 6px;
   font-weight: 400;
@@ -136,22 +136,25 @@ li {
     line-height: 90px;
     letter-spacing: -1.5px;
   }
-  
+
   h2 {
-    font-size: 32px;
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 30px;
     line-height: 48px;
-    letter-spacing: .45px;
   }
 
-  h3 {
+  h4 {
     font-size: 24px;
     line-height: 32px;
-    letter-spacing: 2px;
   }
 
   h5 {
-    font-size: 40px;
+    font-size: 24px;
   }
+
 }
 
 
@@ -161,27 +164,26 @@ li {
   h1 {
     font-size: 72px;
     line-height: 72px;
-    letter-spacing: -1.5px;
+    letter-spacing: 0px;
   }
 
   h2 {
-    font-size: 24px;
-    line-height: 40px;
-    letter-spacing: .45px;
+    font-size: 32px;
   }
 
   h3 {
     font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 2px;
+    line-height: 40px;
+    letter-spacing: 0px;
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   h5 {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
@@ -192,27 +194,26 @@ li {
   h1 {
     font-size: 56px;
     line-height: 56px;
-    letter-spacing: .2px;
+    letter-spacing: 0px;
   }
 
   h2 {
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: .45px;
+    font-size: 24px;
   }
 
   h3 {
     font-size: 20px;
-    line-height: 32px;
-    letter-spacing: 1.5px;
+    line-height: 30px;
+    letter-spacing: 0px;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   h5 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 

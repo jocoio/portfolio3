@@ -21,7 +21,7 @@ function showProjects(jsonObj) {
 
   for (var i = 0; i < projects.length; i++) {
     var myProject = document.createElement('article');
-    var myTitle = document.createElement('h4');
+    var myTitle = document.createElement('h5');
     var myDescription = document.createElement('p');
     var myTags = document.createElement('ul');
 
