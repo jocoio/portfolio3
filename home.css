@@ -5,6 +5,7 @@
   --blue: #378BD2;
   --green: #3EAE42;
   --yellow: #FDCE50;
+  --background: #FBFBFB;
 }
 
 #redLine {
@@ -110,7 +111,7 @@
 .careerCover {
   height: 33%;
   width: 100%;
-  background-color: white;
+  background-color: var(--background);
   position: absolute;
   transform-origin: right center inherit;
 }

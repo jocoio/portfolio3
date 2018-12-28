@@ -26,6 +26,10 @@
   font-weight: 400;
 }
 
+body {
+  background-color: #fbfbfb
+}
+
 /* Edits on built-in elements */
 
 h1, h3, h4, h5, h2, h6, p, a, li {
@@ -100,13 +104,12 @@ li {
 
 /* Custom elements */
 
-.nav {
-  background-color: #ffffff;
-  opacity: .95
+.nav-container {
+  position: fixed;
 }
 
 .nav-link {
-  font-weight: 300;
+  font-weight: 700;
   padding: 15px 0;
 }
 
@@ -214,6 +217,10 @@ li {
 
   h5 {
     font-size: 20px;
+  }
+
+  .nav-container {
+    position: relative;
   }
 }
 

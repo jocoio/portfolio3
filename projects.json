@@ -1,39 +1,33 @@
 {
   "projects": [
     {
-      "title": "Inspiration Generator",
-      "description": "Captstone project. Current prototype works with the Unsplash API to automatically generate color palletes.",
+      "title": "Spotify Visualizer",
+      "description": "Yearlong captstone project. Creates data-driven, interactive music visualizations from Spotify API data.",
       "tags": [["UI/UX","Prototyping"],["React","Javascript", "HTML/CSS"]],
-      "link": "https://jocoio.github.io/inspiration-generator/"
+      "link": ""
     },
     {
       "title": "unsize.",
       "description": "Scout studio project. Worked with unsize, a startup changing the way people shop online. Made a marketing site, updated brand identity, and video assets on how to use their product.",
-      "tags": [["UI/UX", "Prototyping", "Wireframing", "User Testing"],["React"],["Filmmaking"]],
+      "tags": [["UI/UX", "Prototyping", "User Testing"],["React"],["Filmmaking"]],
       "link": "https://www.unsize.me/"
     },
     {
       "title": "Scout Site",
       "description": "A brand refresh and site redesign for Northeastern’s student-led design studio.",
-      "tags": [["UI/UX", "Prototyping", "Wireframing"],[], []],
+      "tags": [["UI/UX", "Prototyping"],[], []],
       "link": "https://web.northeastern.edu/scout/"
     },
     {
       "title": "Hello LA",
       "description": "A local’s guide to Los Angeles. This hackathon project won best user experience at hack@brown 2016!",
-      "tags": [["UI/UX", "Branding", "Wireframing"], [], []],
+      "tags": [["UI/UX", "Branding"], [], []],
       "link": "http://hello-la.herokuapp.com/"
-    },
-    {
-      "title": "MyHousing",
-      "description": "Northeastern’s housing portal is kinda a mess. But what if it wasn’t? Our final project for Design Process, Context, and Systems explored a new user experience for choosing housing.",
-      "tags": [["UI/UX", "User testing", "Wireframing", "Prototyping"],[],[]],
-      "link": ""
     },
     {
       "title": "React Portfolio",
       "description": "The second iteration of my portfolio site. Written in React, this version built my confidence in frameworks and typescript.",
-      "tags": [["UI/UX", "Branding", "Wireframing", "Prototyping"],["React", "Javascript", "HTML/CSS"],[]],
+      "tags": [["UI/UX", "Branding", "Prototyping"],["React", "Javascript", "HTML/CSS"],[]],
       "link": "https://jocoio.github.io/portfolio2.0/"
     },
     {
