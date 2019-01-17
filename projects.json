@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "title": "Spotify Visualizer",
+      "title": "Prism",
       "description": "Yearlong captstone project. Creates data-driven, interactive music visualizations from Spotify API data.",
       "tags": [["UI/UX","Prototyping"],["React","Javascript", "HTML/CSS"]],
       "link": ""
