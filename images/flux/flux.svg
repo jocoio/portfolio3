@@ -3,12 +3,7 @@
     <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
     <title>FLUX</title>
     <desc>Created with Sketch.</desc>
-    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="WorkSans-Black, Work Sans" font-size="100" font-weight="700" letter-spacing="5.92000008">
-        <g id="Artboard" transform="translate(-827.000000, -459.000000)" fill="#FFFFFF">
-            <text id="FLUX">
-                <tspan x="822" y="525">FLU</tspan>
-                <tspan x="1032.46" y="525">X</tspan>
-            </text>
-        </g>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M23.3,17.1 L23.3,26.3 L48.7,26.3 L48.7,43.4 L23.3,43.4 L23.3,66 L0,66 L0,0 L54.7,0 L54.7,17.1 L23.3,17.1 Z M120.52,48.9 L120.52,66 L67.3200001,66 L67.3200001,0 L90.6200001,0 L90.6200001,48.9 L120.52,48.9 Z M196.04,37.6 C196.04,57.200098 185.406773,67 164.14,67 C142.873227,67 132.24,57.200098 132.24,37.6 L132.24,0 L155.64,0 L155.64,39.4 C155.64,42.73335 156.35666,45.2499915 157.79,46.95 C159.223341,48.6500085 161.339986,49.5 164.14,49.5 C166.940014,49.5 169.073326,48.6500085 170.54,46.95 C172.006674,45.2499915 172.74,42.73335 172.74,39.4 L172.74,0 L196.04,0 L196.04,37.6 Z M248.66,66 L239.96,48.9 L231.96,66 L205.66,66 L227.56,33.1 L206.46,0 L233.96,0 L241.66,16.5 L249.46,0 L274.86,0 L253.86,32.5 L276.76,66 L248.66,66 Z" id="FLUX" fill="#FFFFFF"></path>
     </g>
 </svg>
