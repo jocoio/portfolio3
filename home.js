@@ -73,12 +73,12 @@ function experience(scrollMagicController) {
 
   // Experience timeline
   experienceTl
-    .to("#ideoCover", .4, { width: 0}, 0)
+    .to("#ideoCover", .4, { width: 0 }, 0)
     .to("#clarksCover", .4, { width: 0 }, .1)
     .to("#scoutCover", .4, { width: 0 }, .2)
     .to("#jhandyCover", .4, { width: 0 }, .3)
 
-    .to("#ideo", 0.25, {color: "#378BD2" }, .7) // Blue sweep
+    .to("#ideo", 0.25, { color: "#378BD2" }, .7) // Blue sweep
     .to("#clarks", 0.25, { color: "#F67258" }, .8) // Red sweep
     .to("#scout", 0.25, { color: "#3EAE42" }, .9) // Green sweep
     .to("#jhandy", 0.25, { color: "#378BD2" }, 1) // Blue sweep
@@ -106,6 +106,7 @@ function recentWork(scrollMagicController) {
 
   var tgcTl = new TimelineMax();
   var scoutTl = new TimelineMax();
+  var fluxTl = new TimelineMax();
 
   // TGC timeline
   tgcTl
@@ -135,6 +136,22 @@ function recentWork(scrollMagicController) {
     offset: 0, // start scene 0 above trigger
   })
     .setTween(scoutTl)
+    .addTo(scrollMagicController)
+  // .addIndicators();
+
+
+  // flux timeline
+  fluxTl
+    .fromTo("#flux-cover", .25, { top: 40, opacity: 0 }, { top: 0, opacity: 1 }, 0)  // Fade cover in
+    .fromTo("#flux-logo", .25, { y: 180, opacity: 0 }, { y: 155, opacity: 1 }, .3) // Fade logo in
+    ;
+
+  // flux scene
+  var fluxScene = new ScrollMagic.Scene({
+    triggerElement: "#flux-section",
+    offset: 0, // start scene 0 above trigger
+  })
+    .setTween(fluxTl)
     .addTo(scrollMagicController)
   // .addIndicators();
 }

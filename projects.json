@@ -1,12 +1,6 @@
 {
   "projects": [
     {
-      "title": "Flux",
-      "description": "A curated collection of content for developing inclusive teams. In collaboration with IDEO CoLab and GE Ventures.",
-      "tags": [[],["React","Javascript", "HTML/CSS", "Node.js"], []],
-      "link": "http://www.diversitytoolkit.org/"
-    },
-    {
       "title": "Prism",
       "description": "Yearlong capstone project. Creates data-driven, interactive music visualizations from Spotify API data.",
       "tags": [["UI/UX","Prototyping"],["React","Javascript", "HTML/CSS"],[]],

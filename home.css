@@ -59,6 +59,11 @@
   background-size: cover;
 }
 
+#flux-image {
+  background: url("./images/flux/Artboard.png") no-repeat center center;
+  background-size: cover;
+}
+
 #tgc-logo {
   max-width: 100px;
   display: block;
@@ -67,6 +72,12 @@
 
 #scout-logo {
   max-width: 250px;
+  display: block;
+  margin: auto;
+}
+
+#flux-logo {
+  max-width: 100px;
   display: block;
   margin: auto;
 }
