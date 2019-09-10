@@ -91,7 +91,7 @@ function experience(scrollMagicController) {
     .to("#jhandy", 0.25, { color: "#378BD2" }, 1.2) // Blue sweep
 
     .add(colorChangeTl, 1.5)
-    .add(sosoChangeTl, 1.5
+    .add(sosoChangeTl, 1.5)
 
   // Experience scene
   var experienceScene = new ScrollMagic.Scene({
