@@ -74,12 +74,12 @@ function experience(scrollMagicController) {
   // Experience timeline
   experienceTl
     .to("#sosoCover", .4, {width: 0 }, .0)
-    .to("#ideoCover", .4, { width: 0 }, 1)
+    .to("#ideoCover", .4, { width: 0 }, .1)
     .to("#clarksCover", .4, { width: 0 }, .2)
     .to("#scoutCover", .4, { width: 0 }, .3)
     .to("#jhandyCover", .4, { width: 0 }, .4)
     
-    .to("#soso", 0.25, { color: "378BD2" }, .8) // Blue sweep
+    .to("#soso", 0.25, { color: "#378BD2" }, .8) // Blue sweep
     .to("#ideo", 0.25, { color: "#378BD2" }, .9) // Blue sweep
     .to("#clarks", 0.25, { color: "#F67258" }, 1) // Red sweep
     .to("#scout", 0.25, { color: "#3EAE42" }, 1.1) // Green sweep
