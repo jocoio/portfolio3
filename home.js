@@ -73,8 +73,8 @@ function experience(scrollMagicController) {
     .repeat(-1)
   
   sosoChangeTl
-    .to("#soso", 0.5, { color: "#378BD2" }, 1.5) // Blue
-    .to("#soso", 0.5, { color: "#F67258" }, 3) // Red
+    .to("#soso", 0.5, { color: "#F67258" }, 1.5) // Red
+    .to("#soso", 0.5, { color: "#378BD2" }, 3) // Blue
     .repeat(-1)
 
   // Experience timeline
