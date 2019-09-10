@@ -73,7 +73,7 @@ function experience(scrollMagicController) {
 
   // Experience timeline
   experienceTl
-    .to("#sosoCover", .4, {width: 0 }, .0
+    .to("#sosoCover", .4, {width: 0 }, .0)
     .to("#ideoCover", .4, { width: 0 }, 1)
     .to("#clarksCover", .4, { width: 0 }, .2)
     .to("#scoutCover", .4, { width: 0 }, .3)
