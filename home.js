@@ -63,6 +63,7 @@ function skills(scrollMagicController) {
 function experience(scrollMagicController) {
   var experienceTl = new TimelineMax();
   var colorChangeTl = new TimelineMax();
+  var sosoChangeTl = new TimelineMax();
 
   // Color change on scout name timeline
   colorChangeTl
