@@ -70,6 +70,11 @@ function experience(scrollMagicController) {
     .to("#scout", 0.5, { color: "#F67258" }, 3) // Red
     .to("#scout", 0.5, { color: "#3EAE42" }, 4.5) // Green
     .repeat(-1)
+  
+  sosoChangeTl
+    .to("#scout", 0.5, { color: "#378BD2" }, 1.5) // Blue
+    .to("#scout", 0.5, { color: "#F67258" }, 3) // Red
+    .repeat(-1)
 
   // Experience timeline
   experienceTl
@@ -86,6 +91,7 @@ function experience(scrollMagicController) {
     .to("#jhandy", 0.25, { color: "#378BD2" }, 1.2) // Blue sweep
 
     .add(colorChangeTl, 1.5)
+    .add(sosoChangeTl, 1.5
 
   // Experience scene
   var experienceScene = new ScrollMagic.Scene({
