@@ -1,13 +1,3 @@
-/* Brand colors */
-
-:root {
-  --red: #F67258; 
-  --blue: #378BD2;
-  --green: #3EAE42;
-  --yellow: #FDCE50;
-  --background: #FBFBFB;
-}
-
 #redLine {
   background-color: var(--red); 
 }
